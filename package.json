@@ -1,6 +1,6 @@
 {
 
-  "homepage": "https://ahmed-sadek89.github.io/CRUD_App/ ",
+  "homepage": "https://Ahmed-Sadek89.github.io/CRUD_App/ ",
 
   "name": "projrct2",
 
@@ -29,6 +29,10 @@
   },
 
   "scripts": {
+    
+    "predeploy": "npm run build",
+
+    "deploy": "gh-pages -d build",
 
     "start": "react-scripts start",
 
