@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+    list-style: none;
+    margin:0px;
+    padding:0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::selection{
+    color:#fff;
+    background-color: #C43D3D;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    background-color: #C43D3D;
+    text-transform: capitalize;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App{
+    border: 1px solid #000;
+    margin:100px auto;
+    width:70%;
+    padding:30px;
+    background-color: #fff;
 }
-
-.App-link {
-  color: #61dafb;
+.App h1{
+    background-color:#C43D3D ;
+    color:#fff;
+    padding:10px;
+    margin-bottom: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+    padding:6px ;
+    border:none;
+    background-color: #ddd;
+    outline:none;
+    color:#333
+}
+button{
+    padding:6px ;
+    border:none;
+    background-color: #54e154;
+    color:#FFF;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+.formToAddCourse{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+    margin-bottom: 20px;
+}
+.List{
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    grid-template-rows: 100%;
+    margin-bottom: 20px;
+    gap: 7px;
+    color: #999898;
+    font-weight: bold;
+}
+.List button:first-of-type{
+    background-color: #04a3c8;
+}
+.List button:last-of-type{
+    background-color: #F22B2B;
 }
